@@ -10,14 +10,13 @@ function moveDodgerLeft() {
     }
   }
 
-  let left = dodger.style.left;
-  left = parseInt(left, 10);
-
   function moveDodgerRight() {
+    let left = dodger.style.left;
+    left = parseInt(left, 10);
     let newPosition = dodger.style.left;
     newPosition = parseInt(newPosition);
 
-    if (left < 280 ) {
+    if (left < 360 ) {
         dodger.style.left = `${newPosition + 1}px`;
     }
   }
